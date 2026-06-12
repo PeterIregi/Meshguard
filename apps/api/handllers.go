@@ -45,8 +45,7 @@ func NewServer(deps ServerDeps) *Server {
 func (s *Server) Router() *mux.Router {
 	r := mux.NewRouter()
 
-	api := r.PathPrefix("/api").Subrouter()
-
+	api := r.PathPrefix("/api").Subrouter();
 	api.HandleFunc("/bitcoin/status", s.handleBitcoinStatus).Methods("GET")
 	api.HandleFunc("/nodes/status", s.handleNodesStatus).Methods("GET")
 	api.HandleFunc("/channels", s.handleChannels).Methods("GET")
