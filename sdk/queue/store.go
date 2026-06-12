@@ -8,7 +8,7 @@ package queue
 import (
 	"context"
 
-	"meshguard/sdk/types"
+	"Meshguard/sdk/types"
 )
 
 // EventStore defines all persistence operations for MeshGuard events
