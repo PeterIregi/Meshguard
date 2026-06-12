@@ -1,4 +1,5 @@
 package bitcoin
+
 // Purpose: Bitcoin Core RPC adapter for blockchain and mempool queries
 // Connects to: api/handlers.go (GET /api/bitcoin/status)
 // Used by: dashboard BitcoinCore componen

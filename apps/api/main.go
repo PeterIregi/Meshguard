@@ -25,12 +25,12 @@ import (
 
 const (
 	dataDir        = "./data"
-	dbPath           = dataDir + "/meshguard.db"
-	bitcoinRPCHost   = "localhost:18443"
-	bitcoinRPCUser   = "bootcamp"
-	bitcoinRPCPass   = "bootcamp123"
-	aliceRPCAddr     = "localhost:10009"
-	bobRPCAddr       = "localhost:10010"
+	dbPath         = dataDir + "/meshguard.db"
+	bitcoinRPCHost = "localhost:18443"
+	bitcoinRPCUser = "bootcamp"
+	bitcoinRPCPass = "bootcamp123"
+	aliceRPCAddr   = "localhost:10009"
+	bobRPCAddr     = "localhost:10010"
 )
 
 func main() {
@@ -61,7 +61,7 @@ func main() {
 	}
 
 	aliceClient := lightning.NewLNDClient(lightning.NodeConfig{
-		Name:         "Alice",
+		Name: "Alice",
 		/*RPCAddr:      aliceRPCAddr,*/
 		RestAddr:     "127.0.0.1:8080",
 		TLSCertPath:  homeDir + "/bootcamp-code/day3/alice/tls.cert",
@@ -69,7 +69,7 @@ func main() {
 	})
 
 	bobClient := lightning.NewLNDClient(lightning.NodeConfig{
-		Name:         "Bob",
+		Name: "Bob",
 		/*RPCAddr:      bobRPCAddr,*/
 		RestAddr:     "127.0.0.1:8081",
 		TLSCertPath:  homeDir + "/bootcamp-code/day3/bob/tls.cert",
